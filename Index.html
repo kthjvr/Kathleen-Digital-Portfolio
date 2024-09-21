@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FOR FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- END FOR FONT -->
+    <!-- FOR ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- END FOR ICONS -->
+    <title>Kathleen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/assets/logo.png" alt="Logo"></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#featured-works">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="csv-button mobile"><a href="/assets/JAVIER_K-RESUME.pdf" target="_blank">View Resume</a></button>
+        <div class="toggle-button" onclick="toggleMenu()">☰</div>
+    </nav>
+    <ul class="mobile-nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#featured-works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="csv-button mobile"><a href="/assets/JAVIER_K-RESUME.pdf" target="_blank">View Resume</a></button>
+    </ul>
+    <section class="introduction zoom">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h2>Hi! My name is</h2>
+                <h1 class="zoom ">Kathleen Javier.</h1>
+                <h2>I'm a dedicated quality assurance specialist focused on ensuring your website is bug-free and functions flawlessly. Let's work together to deliver a high-quality online experience for your users.</h2>
+                <div class="location">
+                    <img src="/assets/location.png">
+                    <span>&nbsp;&nbsp;Lipa City, Batangas, Philippines</span>
+                </div>
+                <div class="status">
+                    <div class="online-circle"></div>
+                    <span>&nbsp;&nbsp;Open for opportunities</span>
+                </div>
+            </div>
+            <div class="intro-image scale">
+                <img src="/assets/avatar1.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="zoom about-section">
+        <div class="about-content">
+            <div class="about-image scale">
+                <img src="/assets/avatar2.png" alt="Kathleen Javier">
+                <div class="social-icons-wrapper">
+                    <div class="social-icons">
+                        <a href="https://github.com/kthjvr" target="_blank"><img src="/assets/github-sign.png" alt="Github"></a>
+                        <a href="https://www.linkedin.com/in/kathleenjavier" target="_blank"><img src="/assets/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/kx.linaa/" target="_blank"><img src="/assets/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/kx.linaa" target="_blank"><img src="/assets/facebook.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h1 class="zoom ">Get to know Kathleen!</h1>
+                <p class="zoom ">I'm a passionate programmer with a strong drive to create high-quality user experiences. I'm always seeking new challenges and opportunities to learn and grow. I'm particularly drawn to projects that combine technology with creativity to solve real-world problems.<br><br>
+                My goal is to build a career where I can combine my technical skills with my creativity to design and develop innovative and engaging web applications. To see examples of my work and learn more about my services, click <a href="#">here!</a><br><br>
+                I'm committed to delivering exceptional results and exceeding expectations. My dedication to quality, attention to detail, and a collaborative approach make me a valuable asset to any team. <a href="#">See my resume!</a>
+                <br><br>Let's connect and discuss how I can help you achieve your goals!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="zoom services-section">
+        <div class="services-content">
+            <div class="services-text">
+                <h3>Services</h3>
+                <h1>How can I help?</h1>
+                <p>I'm always happy to collaborate with clients to achieve their goals. Let's discuss your project!</p>
+                <button class="contact-button"><a href="#contact">Get in Touch</a></button>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-inner" id="carousel">
+                    <div class="zoom carousel-item">
+                        <div class="service-item">
+                            <div class="service-image">
+                                <img src="/assets/test.png" alt="Service 3">
+                                <span class="service-tag">Test</span>
+                            </div>
+                            <div class="service-info">
+                                <h2>Quality Assurance</h2>
+                                <p>I ensure the quality and functionality of software applications through rigorous testing. I'm experienced in test automation using Selenium, PLaywright and other tools.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="zoom carousel-item active">
+                        <div class="service-item">
+                            <div class="service-image">
+                                <img src="/assets/design.png" alt="Service 1">
+                                <span class="service-tag">Design</span>
+                            </div>
+                            <div class="service-info">
+                                <h2>UI Design & Prototyping</h2>
+                                <p> I'm skilled in wire framing, prototyping, and creating interactive designs that enhance user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom carousel-item">
+                        <div class="service-item">
+                            <div class="service-image">
+                                <img src="/assets/develop.png" alt="Service 2">
+                                <span class="service-tag">Develop</span>
+                            </div>
+                            <div class="service-info">
+                                <h2>Web Development</h2>
+                                <p>I build custom websites and web applications using HTML, CSS, JavaScript, and other relevant technologies. I can also build 2D games using java.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-works" class="zoom featured-works-section">
+        <h1 class="section-title">Featured Works</h1>
+        <div class="categories">
+            <span class="category active" data-category="all">All</span>
+            <span class="category" data-category="design">Design</span>
+            <span class="category" data-category="websites">Websites</span>
+            <span class="category" data-category="game">Game</span>
+            <span class="category" data-category="quality-assurance">Quality Assurance</span>
+        </div>
+        <div class="work-carousel">
+            <div class="work-carousel-inner">
+                <!-- Example Work Item -->
+                <div class="zoom work-carousel-item" data-category="design">
+                    <a>
+                        <img src="assets/portfolio-design.png" alt="Work 1">
+                        <div class="work-content">
+                            <div class="tech">
+                                <img class="tech-img" src="/assets/tech/figma.png" alt="figma">
+                            </div>
+                            <div class="work-title-content">
+                                <div class="work-title">Portfolio Design</div>
+                            </div>
+                            <div class="work-description">A minimalist portfolio designs using Figma, prioritizing clarity and effectively showcase your skills</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="zoom work-carousel-item" data-category="websites">
+                    <a>
+                        <img src="assets/todo.png" alt="Work 1">
+                        <div class="work-content">
+                            <div class="tech">
+                                <img class="tech-img" src="/assets/tech/php.png" alt="php">
+                                <img class="tech-img" src="/assets/tech/js.png" alt="javascript">
+                                <img class="tech-img" src="/assets/tech/html.png" alt="html">
+                                <img class="tech-img" src="/assets/tech/css.png" alt="css">
+                            </div>
+                            <div class="work-title-content">
+                                <div class="work-title">Todoo</div>
+                            </div>
+                            <div class="work-description">A user-friendly task management website that helps you stay organized and on top of your to-do list.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="zoom work-carousel-item" data-category="game">
+                    <a>
+                        <img src="assets/cat.png" alt="Cat treasure hunt">
+                        <div class="work-content">
+                            <div class="tech">
+                                <img class="tech-img" src="/assets/tech/java.png" alt="java">
+                            </div>
+                            <div class="work-title-content">
+                                <div class="work-title">Cat Hunt</div>
+                            </div>
+                            <div class="work-description">A fun 2D game I created using Java, interactive and engaging game using object-oriented programming principles.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="zoom work-carousel-item" data-category="websites">
+                    <a>
+                        <img src="assets/digital portfolio.png" alt="">
+                        <div class="work-content">
+                            <div class="tech">
+                                <img class="tech-img" src="/assets/tech/java.png" alt="java">
+                            </div>
+                            <div class="work-title-content">
+                                <div class="work-title">Digital Portfolio</div>
+                            </div>
+                            <div class="work-description">A digital portfolio showcases my skills and experiences in a visually compelling and easily accessible format.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Add more work items as needed -->
+                 
+            </div>
+
+        </div>
+    </section>
+    <section id="tech" class="zoom tech-section">
+        <div class="technology-header zoom">
+            <h1>Technologies that I use</h1>
+        </div>
+        <div class="tech-images zoom">
+            <div class="tooltip">
+                <img src="/assets/tech/php.png" alt="">
+                <span class="tooltip-text">PHP: Hypertext Preprocessor</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/java.png" alt="">
+                <span class="tooltip-text">Java</span>
+            </div>
+            <div class="tooltip">
+                <img src="/assets/tech/html.png" alt="">
+                <span class="tooltip-text">HTML</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/js.png" alt="">
+                <span class="tooltip-text">JavaScript</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/css.png" alt="">
+                <span class="tooltip-text">CSS</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/sql.png" alt="">
+                <span class="tooltip-text">MySQL</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/wordpress.png" alt="">
+                <span class="tooltip-text">wordpress</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/intellij.png" alt="">
+                <span class="tooltip-text">intellij</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/typescript.png" alt="">
+                <span class="tooltip-text">Typescript</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/selenium.png" alt="">
+                <span class="tooltip-text">Selenium</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/playwright.png" alt="">
+                <span class="tooltip-text">Playwright</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/cucumber.png" alt="">
+                <span class="tooltip-text">cucumber</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/testomat.png" alt="">
+                <span class="tooltip-text">Testomat.io</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/figma.png" alt="">
+                <span class="tooltip-text">Figma</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/canva.png" alt="">
+                <span class="tooltip-text">Canva</span>
+            </div>
+
+            <div class="tooltip">
+                <img src="/assets/tech/vs.png" alt="">
+                <span class="tooltip-text">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact zoom">
+        <div class="contact-wrapper zoom">
+            <h1>Have a project in mind? Send me an email!</h1>
+            <h3>
+                <a href="mailto:kathleenpacinojavier@gmail.com">kathleenpacinojavier@gmail.com</a>
+            </h3>
+            <h2>Or reach out to me in my socials!</h2>
+            <div class="sns-wrapper">
+                <a href="https://www.facebook.com/kx.linaa" target="_blank"><img src="/assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/kx.linaa/" target="_blank"><img src="/assets/instagram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/kathleenjavier" target="_blank"><img src="/assets/linkedin.png" alt=""></a>
+                <a href="https://github.com/kthjvr" target="_blank"><img src="/assets/github-sign.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <button class="back-to-top"><img src="/assets/up-arrow.png" alt=""></button>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

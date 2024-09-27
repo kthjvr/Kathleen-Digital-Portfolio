@@ -870,8 +870,128 @@ body {
 }
 
 
-
+/* for mobile view */
 @media (max-width: 768px) {
+
+    .featured-works-section {
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        padding: 10px;
+        background-color: #FFECEC;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .category {
+        cursor: pointer;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+        font-size: 12px;
+    }
+
+    .category:hover,
+    .category.active {
+        background-color: #FF9494;
+        color: white;
+
+    }
+
+    .work-carousel {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .work-carousel-inner {
+        display: list-item;
+        gap: 10px;
+        justify-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    
+    .work-carousel-item {
+        cursor: pointer;
+        height: fit-content;
+        text-align: left;
+        min-height: 22vh;
+        width: 15rem;
+        background-color: #18151fe6;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .work-carousel-item a {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        text-decoration: none;
+        background-color: transparent;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .tech-section {
+        justify-content: center;
+        align-items: center;
+    }
+    .technology-header{
+        display: contents;
+        text-align: center;
+    }
+    
+    .technology-header h1{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .tech-images {
+        margin: 30px;
+    }
+    
+    .tech-images img{
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .contact {
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        padding: 10px;
+        background-color: #FDE0E0;
+    }
+
+    .contact-wrapper h1{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-wrapper h2{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-wrapper h3{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1028,5 +1148,6 @@ body {
     .carousel-control-next {
         right: 10px;
     }
+
 
 }

@@ -7,7 +7,7 @@ body {
     background-position: top center;
     max-height: 1240px;
     /* overflow: hidden; */
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 /* navigation bar */
@@ -861,6 +861,16 @@ body {
     -o-transform: scale(2);
 }
 
+.source button {
+    padding: 5px;
+    background-color:#FFD1D1;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
 /* Hide buttons for larger screens */
 @media (min-width: 768px) {
     .carousel-control-prev,
@@ -910,11 +920,13 @@ body {
     }
     
     .work-carousel-inner {
-        display: list-item;
+        display: flex;
         gap: 10px;
         justify-items: center;
         justify-content: space-around;
         list-style-type: none;
+        /* padding: 30px; */
+        flex-direction: column;
     }
     
     .work-carousel-item {
